@@ -64,7 +64,14 @@ const JSON_LD = JSON.stringify({
   "@type": "TravelAgency",
   name: AGENCY.name,
   areaServed: "Bauru, SP",
-  address: { "@type": "PostalAddress", addressLocality: "Bauru", addressRegion: "SP", addressCountry: "BR" },
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: "R. Ver. Joaquim da Silva Martha, 17-9 - Jardim Estoril",
+    addressLocality: "Bauru",
+    addressRegion: "SP",
+    postalCode: "17011-170",
+    addressCountry: "BR",
+  },
   telephone: `+${AGENCY.whatsapp}`,
   sameAs: [AGENCY.instagramUrl],
   makesOffer: DESTINATIONS.map((d) => ({
@@ -535,6 +542,7 @@ function HomePage() {
       <WhyInfinity />
       <Calendar />
       <Faqs />
+      <VisitUs />
       <FinalCall />
       <script
         type="application/ld+json"
