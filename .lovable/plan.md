@@ -1,7 +1,7 @@
 # Plano — Calendário mais simples e intuitivo
 
 ## Objetivo
-Facilitar a cotação para qualquer pessoa entender imediatamente o próximo passo, selecionar ida e volta e corrigir uma escolha sem precisar recomeçar.
+Facilitar a cotação para qualquer pessoa entender imediatamente o próximo passo, selecionar ida e volta e corrigir uma escolha sem precisar recomeçar. A mesma experiência será aplicada aos calendários de Porto Seguro, Maceió, Porto de Galinhas e Recife.
 
 ## Fluxo proposto
 1. **Mostrar o progresso em três passos**
@@ -30,7 +30,11 @@ Facilitar a cotação para qualquer pessoa entender imediatamente o próximo pas
    - Manter botões grandes no celular, foco de teclado e avisos anunciados para leitores de tela.
    - Preservar destinos, datas, passageiros e envio pelo WhatsApp já existentes.
 
+6. **Padronizar todos os destinos**
+   - Aplicar os mesmos passos, mensagens, ajuda e opções de alteração aos quatro destinos.
+   - Respeitar as datas disponíveis e regras específicas de ida e volta de cada destino.
+
 ## Validação
-- Testar o fluxo completo e a troca de ida/volta em computador e celular.
+- Testar o fluxo completo e a troca de ida/volta nos quatro destinos, em computador e celular.
 - Conferir troca de mês, troca de destino, datas indisponíveis e mensagem final do WhatsApp.
 - Confirmar ausência de sobreposição, rolagem lateral e erros na página.
