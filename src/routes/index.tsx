@@ -21,6 +21,7 @@ import { Kicker, Pill, SectionHeading, DestinationImage, DestinationLink } from 
 import { PackageCard } from "@/components/package-card";
 import { Reveal } from "@/components/reveal";
 import { WhatsAppButton } from "@/components/whatsapp-button";
+import { FlightCalendar } from "@/components/flight-calendar";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -83,7 +84,7 @@ const JSON_LD = JSON.stringify({
 
 function Hero() {
   return (
-    <section className="relative isolate flex min-h-[100svh] items-end overflow-hidden">
+    <section className="relative isolate flex min-h-[82svh] items-end overflow-hidden">
       <img
         src={heroImage}
         alt="Costa do Nordeste brasileiro vista do alto ao entardecer"
@@ -102,7 +103,7 @@ function Hero() {
         className="absolute inset-0 -z-10 bg-gradient-to-r from-ink/85 via-transparent to-transparent"
       />
 
-      <div className="mx-auto w-full max-w-6xl px-5 pt-32 pb-16">
+      <div className="mx-auto w-full max-w-6xl px-5 pt-32 pb-14">
         <div className="max-w-3xl">
           <h1 className="font-display text-[clamp(2.9rem,8vw,5.6rem)] leading-[0.95] font-light text-cream">
             De Bauru para o Nordeste,
@@ -110,27 +111,26 @@ function Hero() {
           </h1>
 
           <p className="mt-6 max-w-xl text-lg leading-relaxed text-muted-foreground">
-            Porto Seguro sai todos os sábados até setembro de 2027 — e julho de 2027 já está aberto.
-            Maceió, Porto de Galinhas e Recife entram em dezembro e janeiro. A gente fecha
-            passagem, hotel e transfer no mesmo pacote.
+            Consulte as datas dos voos saindo de Bauru, veja pacotes em promoção e fale direto
+            com o Dênis para montar sua viagem com passagem, hotel e transfer.
           </p>
 
           <div className="mt-9 flex flex-wrap items-center gap-3">
             <WhatsAppButton
-              href={whatsappLink(GENERIC_MESSAGE)}
+              href="#calendario"
               size="lg"
             >
-              Falar no WhatsApp
+              Ver calendário
             </WhatsAppButton>
             <a
-              href="#voos"
+              href="#pacotes"
               className="inline-flex items-center gap-2 rounded-full border border-line-strong px-7 py-4 text-[0.8rem] font-semibold uppercase tracking-[0.14em] text-cream transition-colors hover:border-gold hover:text-gold"
             >
-              Ver os voos
+              Ver promoções
             </a>
           </div>
 
-          <dl className="mt-12 grid max-w-2xl grid-cols-2 gap-6 border-t border-line pt-8 sm:grid-cols-4">
+          <dl className="mt-10 grid max-w-2xl grid-cols-2 gap-6 border-t border-line pt-7 sm:grid-cols-4">
             {[
               ["4", "destinos"],
               ["Sáb", "saídas toda semana"],
@@ -206,15 +206,20 @@ function Flights() {
 }
 
 function FeaturedPackages() {
+  const mainPromotions = FEATURED_PACKAGES.filter(
+    (pkg, index, packages) =>
+      packages.findIndex((candidate) => candidate.destinationSlug === pkg.destinationSlug) === index,
+  );
+
   return (
-    <section id="pacotes" className="scroll-mt-24 border-t border-line bg-ink-soft/30 py-24 surface-noise">
+    <section id="pacotes" className="scroll-mt-24 border-t border-line bg-ink-soft/30 py-16 surface-noise sm:py-20">
       <div className="mx-auto max-w-6xl px-5">
         <Reveal>
           <div className="flex flex-wrap items-end justify-between gap-6">
             <SectionHeading
-              kicker="Pacotes em destaque"
-              title="Exemplos de pacote para você já se imaginar lá"
-              lead="Passagem, hospedagem, refeições e transfer no mesmo contrato. Os valores são exemplos — a cotação real vai no WhatsApp em minutos."
+              kicker="Pacotes em promoção"
+              title="Uma oferta de cada destino"
+              lead="Valores de exemplo para facilitar sua escolha. A disponibilidade e o preço atualizado são confirmados no WhatsApp."
             />
             <a
               href="/pacotes"
@@ -225,8 +230,8 @@ function FeaturedPackages() {
           </div>
         </Reveal>
 
-        <div className="mt-14 grid gap-6 sm:grid-cols-2 xl:grid-cols-4">
-          {FEATURED_PACKAGES.map((pkg, i) => (
+        <div className="mt-10 grid gap-6 sm:grid-cols-2 xl:grid-cols-4">
+          {mainPromotions.map((pkg, i) => (
             <Reveal key={pkg.id} delay={i * 80}>
               <PackageCard pkg={pkg} />
             </Reveal>
@@ -239,12 +244,12 @@ function FeaturedPackages() {
 
 function HowItWorks() {
   return (
-    <section id="como-funciona" className="scroll-mt-24 border-t border-line py-24">
+    <section id="como-funciona" className="scroll-mt-24 border-t border-line py-16 sm:py-20">
       <div className="mx-auto max-w-6xl px-5">
         <Reveal>
           <SectionHeading kicker="Como funciona" title="Três passos, um WhatsApp" />
         </Reveal>
-        <ol className="mt-14 grid gap-6 md:grid-cols-3">
+        <ol className="mt-10 grid gap-6 md:grid-cols-3">
           {STEPS.map((step, i) => (
             <Reveal key={step.n} delay={i * 90} as="li">
               <div className="h-full rounded-2xl border border-line bg-ink-soft/50 p-7">
@@ -384,7 +389,7 @@ function Faqs() {
   const [open, setOpen] = useState<number | null>(0);
 
   return (
-    <section id="faq" className="scroll-mt-24 border-t border-line bg-ink-soft/30 py-24">
+    <section id="faq" className="scroll-mt-24 border-t border-line bg-ink-soft/30 py-16 sm:py-20">
       <div className="mx-auto grid max-w-6xl gap-12 px-5 lg:grid-cols-[0.9fr_1.1fr]">
         <Reveal>
           <SectionHeading kicker="Dúvidas frequentes" title="Antes de fechar o pacote" />
@@ -536,14 +541,11 @@ function HomePage() {
   return (
     <>
       <Hero />
-      <Flights />
+      <FlightCalendar />
       <FeaturedPackages />
       <HowItWorks />
-      <WhyInfinity />
-      <Calendar />
       <Faqs />
       <VisitUs />
-      <FinalCall />
       <script
         type="application/ld+json"
         // eslint-disable-next-line react/no-danger
