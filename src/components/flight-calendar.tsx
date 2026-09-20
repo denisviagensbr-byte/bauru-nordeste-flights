@@ -16,7 +16,7 @@ type DestinationOption = {
 
 const DESTINATIONS: DestinationOption[] = [
   { id: "porto-seguro", name: "Porto Seguro", summary: "Sábados até setembro de 2027" },
-  { id: "maceio", name: "Maceió", summary: "Saídas em janeiro de 2027" },
+  { id: "maceio", name: "Maceió", summary: "Quintas, de dez/2026 a fev/2027" },
   { id: "porto-de-galinhas", name: "Porto de Galinhas", summary: "Via Recife em janeiro de 2027" },
   { id: "recife", name: "Recife", summary: "Saídas em janeiro de 2027" },
 ];
@@ -27,12 +27,16 @@ const MONTHS = Array.from({ length: 15 }, (_, index) => {
 });
 
 const WEEKDAYS = ["D", "S", "T", "Q", "Q", "S", "S"];
-const MACEIO_DEPARTURES = [3, 4, 5, 6, 8];
 const PERNAMBUCO_DEPARTURES = [3, 4, 5, 6, 7, 8];
+const MACEIO_DEPARTURES = [
+  "2026-12-10", "2026-12-17", "2026-12-24", "2026-12-31",
+  "2027-01-07", "2027-01-14", "2027-01-21", "2027-01-28",
+  "2027-02-04", "2027-02-11",
+];
 const MACEIO_RETURNS = [
-  "2027-01-07", "2027-01-09", "2027-01-14", "2027-01-16", "2027-01-21",
-  "2027-01-23", "2027-01-28", "2027-01-30", "2027-02-04", "2027-02-06",
-  "2027-02-11", "2027-02-13",
+  "2026-12-12", "2026-12-19", "2026-12-26",
+  "2027-01-02", "2027-01-09", "2027-01-16", "2027-01-23", "2027-01-30",
+  "2027-02-06", "2027-02-13",
 ];
 const PERNAMBUCO_RETURNS = [
   "2027-01-09", "2027-01-16", "2027-01-23", "2027-01-30", "2027-02-06", "2027-02-13",
@@ -70,10 +74,8 @@ function isDeparture(destination: DestinationId, year: number, month: number, da
   if (destination === "porto-seguro") {
     return date.getDay() === 6 && date >= new Date(2026, 8, 26) && date <= new Date(2027, 8, 25);
   }
-  if (year !== 2027 || month !== 0) return false;
-  return destination === "maceio"
-    ? MACEIO_DEPARTURES.includes(day)
-    : PERNAMBUCO_DEPARTURES.includes(day);
+  if (destination === "maceio") return MACEIO_DEPARTURES.includes(isoDate(year, month, day));
+  return year === 2027 && month === 0 && PERNAMBUCO_DEPARTURES.includes(day);
 }
 
 function isReturn(destination: DestinationId, value: string, departure: string | null) {
@@ -152,7 +154,7 @@ export function FlightCalendar() {
 
   function chooseDestination(id: DestinationId) {
     setDestination(id);
-    setMonthIndex(id === "porto-seguro" ? 0 : 4);
+    setMonthIndex(id === "porto-seguro" ? 0 : id === "maceio" ? 3 : 4);
     setDeparture(null);
     setReturnDate(null);
   }

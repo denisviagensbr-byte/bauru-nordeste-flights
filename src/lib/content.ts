@@ -131,12 +131,12 @@ export const DESTINATIONS: Destination[] = [
     image: maceioImage,
     imageAlt: "Mar turquoise e falésias em Maceió no fim de tarde",
     kicker: "Temporada de festas",
-    schedule: "03, 04, 05, 06 e 08 de janeiro de 2027",
+    schedule: "Quintas-feiras de 10 de dezembro de 2026 a 11 de fevereiro de 2027",
     seasons: ["dezjan"],
-    badges: ["Saídas 03, 04, 05, 06 e 08/01"],
+    badges: ["Saídas de dez/2026 a fev/2027"],
     forWhom: "Quem quer virar o ano na praia e voltar com a semana toda de sol.",
     intro:
-      "Maceió entra no nosso calendário com saídas diretas de Bauru nos dias 03, 04, 05, 06 e 08 de janeiro de 2027. Montamos o pacote com a Azul Viagens e cuidamos de tudo entre a saída e o seu retorno.",
+      "Maceió entra no nosso calendário com saídas diretas de Bauru às quintas-feiras, de 10 de dezembro de 2026 a 11 de fevereiro de 2027. Montamos o pacote com a Azul Viagens e cuidamos de tudo entre a saída e o seu retorno.",
     highlights: [
       "Piscinas naturais de Pajuçara na maré baixa",
       "Dia em Maragogi e nos Carros de Bois de São Miguel dos Milagres",
@@ -150,7 +150,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     seoTitle: "Maceió saindo de Bauru — janeiro de 2027 | Infinity Travel",
     seoDescription:
-      "Maceió com voos diretos saindo de Bauru em 03, 04, 05, 06 e 08 de janeiro de 2027. Pacotes Azul Viagens com passagem, hotel e transfer. Atendimento da Infinity Travel Bauru.",
+      "Maceió com voos diretos saindo de Bauru às quintas-feiras, de dezembro de 2026 a fevereiro de 2027. Pacotes Azul Viagens com passagem, hotel e transfer.",
   },
   {
     slug: "portos-de-galinhas",
@@ -329,7 +329,7 @@ export const PACKAGES: Pkg[] = [
     hotel: "Praia Resort Sete Coqueiros · 4 estrelas",
     meal: "All inclusive",
     price: 5490,
-    dates: "Saídas diretas em 03, 04, 05, 06 e 08 de janeiro de 2027",
+    dates: "Saídas diretas às quintas, de dezembro de 2026 a fevereiro de 2027",
     includes: [
       "Voo Bauru ⇄ Maceió",
       "7 noites com all inclusive",
@@ -347,7 +347,7 @@ export const PACKAGES: Pkg[] = [
     hotel: "Hotel Orla da Jatiúca · 4 estrelas",
     meal: "Café da manhã",
     price: 3890,
-    dates: "Saídas diretas em 03, 04, 05, 06 e 08 de janeiro de 2027",
+    dates: "Saídas diretas às quintas, de dezembro de 2026 a fevereiro de 2027",
     includes: [
       "Voo Bauru ⇄ Maceió",
       "5 noites com café da manhã",
