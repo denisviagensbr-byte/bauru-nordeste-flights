@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { createFileRoute } from "@tanstack/react-router";
 import heroImage from "@/assets/hero-bauru-nordeste.jpg";
+import fachadaAsset from "@/assets/fachada-infinity-travel.jpg.asset.json";
 import {
   AGENCY,
   DESTINATIONS,
@@ -462,6 +463,62 @@ function FinalCall() {
           <p className="mt-6 text-xs text-muted-foreground">
             {AGENCY.city} · {AGENCY.hours}
           </p>
+        </Reveal>
+      </div>
+    </section>
+  );
+}
+
+function VisitUs() {
+  return (
+    <section id="loja" className="border-t border-line py-20 sm:py-28">
+      <div className="mx-auto grid w-full max-w-6xl items-center gap-12 px-5 sm:px-8 lg:grid-cols-2">
+        <Reveal>
+          <div className="overflow-hidden rounded-3xl border border-line shadow-[0_30px_80px_-30px_rgba(0,0,0,0.8)]">
+            <img
+              src={fachadaAsset.url}
+              alt="Fachada da Infinity Travel Bauru no Jardim Estoril"
+              className="h-full w-full object-cover"
+              loading="lazy"
+            />
+          </div>
+        </Reveal>
+        <Reveal delay={120}>
+          <Kicker>Nossa loja</Kicker>
+          <h2 className="font-display mt-4 text-4xl leading-[1.05] text-cream sm:text-5xl">
+            Prefere conversar pessoalmente?
+          </h2>
+          <p className="mt-5 max-w-lg text-muted-foreground">
+            Nossa agência fica no Jardim Estoril, em Bauru. Passe para tomar um café e montar sua
+            viagem com o {AGENCY.agent} e a equipe.
+          </p>
+          <ul className="mt-7 space-y-3 text-sm text-cream/90">
+            <li className="flex gap-3">
+              <span className="mt-0.5 text-gold">📍</span>
+              <span>{AGENCY.address}</span>
+            </li>
+            <li className="flex gap-3">
+              <span className="mt-0.5 text-gold">🕘</span>
+              <span>{AGENCY.hours}</span>
+            </li>
+            <li className="flex gap-3">
+              <span className="mt-0.5 text-gold">💬</span>
+              <span>WhatsApp {AGENCY.whatsappDisplay}</span>
+            </li>
+          </ul>
+          <div className="mt-9 flex flex-wrap gap-3">
+            <a
+              href={AGENCY.mapsUrl}
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex items-center gap-2 rounded-full border border-line-strong px-6 py-3.5 text-[0.8rem] font-semibold uppercase tracking-[0.14em] text-cream transition-colors hover:border-gold hover:text-gold"
+            >
+              Abrir no Google Maps
+            </a>
+            <WhatsAppButton href={whatsappLink(GENERIC_MESSAGE)}>
+              Chamar no WhatsApp
+            </WhatsAppButton>
+          </div>
         </Reveal>
       </div>
     </section>
