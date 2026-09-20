@@ -267,7 +267,7 @@ function WhyInfinity() {
             <SectionHeading
               kicker="Por que a Infinity"
               title="Quem vende, acompanha"
-              lead="Pacote bom não é só preço: é saber com quem você fala quando something muda. Aqui é a mesma pessoa do começo ao fim."
+              lead="Pacote bom não é só preço: é saber com quem você fala quando algo muda. Aqui é a mesma pessoa do começo ao fim."
             />
             <WhatsAppButton
               href={whatsappLink(GENERIC_MESSAGE)}
