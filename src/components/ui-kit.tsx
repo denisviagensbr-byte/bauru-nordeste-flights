@@ -2,7 +2,7 @@ import { cn } from "@/lib/utils";
 import { DESTINATIONS } from "@/lib/content";
 import { Link } from "@tanstack/react-router";
 
-/** Gold pill used for badges such as "Sábados, o ano todo" or "Julho 2027". */
+/** Gold pill used for badges such as "Sábados até set/2027" or "Julho 2027". */
 export function Pill({
   children,
   tone = "gold",
