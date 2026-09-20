@@ -1,4 +1,5 @@
 import { Link } from "@tanstack/react-router";
+import logoImage from "@/assets/logo-infinity.png";
 import { AGENCY, DESTINATIONS, GENERIC_MESSAGE } from "@/lib/content";
 import { WhatsAppButton } from "@/components/whatsapp-button";
 
@@ -9,7 +10,7 @@ export function SiteFooter() {
     <footer className="border-t border-line bg-ink-soft/60">
       <div className="mx-auto grid max-w-6xl gap-12 px-5 py-16 md:grid-cols-[1.4fr_1fr_1fr]">
         <div>
-          <span className="font-display text-3xl text-cream">Infinity Travel</span>
+          <img src={logoImage} alt="Grupo Infinity Travel" className="h-20 w-auto" />
           <p className="mt-4 max-w-sm text-sm leading-relaxed text-muted-foreground">
             Agência de viagens em Bauru especializada nas saídas para o Nordeste, com pacotes
             Azul Viagens montados, emitidos e acompanhados por nós — do primeiro WhatsApp até o

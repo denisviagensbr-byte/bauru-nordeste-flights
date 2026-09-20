@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link } from "@tanstack/react-router";
+import logoImage from "@/assets/logo-infinity.png";
 import { AGENCY, GENERIC_MESSAGE } from "@/lib/content";
 import { WhatsAppButton } from "@/components/whatsapp-button";
 import { cn } from "@/lib/utils";
@@ -19,16 +20,16 @@ function Wordmark() {
       className="group flex items-center gap-3"
       aria-label={`${AGENCY.name} — página inicial`}
     >
-      <span className="grid h-9 w-9 place-items-center rounded-full border border-line-strong bg-ink-soft text-gold transition-colors group-hover:border-gold">
-        <svg viewBox="0 0 24 24" className="h-4 w-4" fill="none" stroke="currentColor" strokeWidth="1.6">
-          <path d="M2 16.5 22 7.5 13.5 20l-1.8-5.2L2 16.5Z" strokeLinejoin="round" />
-        </svg>
-      </span>
-      <span className="leading-none">
-        <span className="block font-display text-lg tracking-wide text-cream">Infinity</span>
-        <span className="block text-[0.58rem] font-semibold uppercase tracking-[0.3em] text-gold">
-          Travel · Bauru
-        </span>
+      <img
+        src={logoImage}
+        alt="Grupo Infinity Travel"
+        className="h-10 w-auto shrink-0 transition-transform duration-500 group-hover:scale-[1.04] sm:h-11 lg:h-12"
+      />
+      <span className="hidden h-8 w-px bg-line-strong xl:block" />
+      <span className="hidden text-[0.58rem] font-semibold uppercase leading-[1.6] tracking-[0.26em] text-gold xl:block">
+        Bauru
+        <br />
+        <span className="text-muted-foreground">Nordeste</span>
       </span>
     </Link>
   );
