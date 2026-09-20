@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { createFileRoute } from "@tanstack/react-router";
+import { Clock, MapPin, MessageCircle } from "lucide-react";
 import heroImage from "@/assets/hero-bauru-nordeste.jpg";
 import fachadaAsset from "@/assets/fachada-infinity-travel.jpg.asset.json";
 import {
