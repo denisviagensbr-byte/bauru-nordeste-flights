@@ -30,7 +30,7 @@ export const Route = createFileRoute("/")({
       {
         name: "description",
         content:
-          "Porto Seguro todo sábado, o ano todo, e julho de 2027 em destaque. Maceió, Porto de Galinhas e Recife em dezembro e janeiro. Pacotes Azul Viagens com passagem, hotel e transfer. Fale com a Infinity Travel Bauru.",
+          "Porto Seguro todo sábado até setembro de 2027, e julho de 2027 em destaque. Maceió, Porto de Galinhas e Recife em dezembro e janeiro. Pacotes Azul Viagens com passagem, hotel e transfer. Fale com a Infinity Travel Bauru.",
       },
       {
         property: "og:title",
@@ -39,7 +39,7 @@ export const Route = createFileRoute("/")({
       {
         property: "og:description",
         content:
-          "Porto Seguro todo sábado o ano todo e julho de 2027. Maceió, Porto de Galinhas e Recife em dezembro e janeiro. Pacotes Azul Viagens montados pela Infinity Travel Bauru.",
+          "Porto Seguro todo sábado até setembro de 2027 e julho de 2027. Maceió, Porto de Galinhas e Recife em dezembro e janeiro. Pacotes Azul Viagens montados pela Infinity Travel Bauru.",
       },
       { property: "og:type", content: "website" },
       { property: "og:locale", content: "pt_BR" },
@@ -95,18 +95,13 @@ function Hero() {
 
       <div className="mx-auto w-full max-w-6xl px-5 pt-32 pb-16">
         <div className="max-w-3xl">
-          <div className="flex flex-wrap items-center gap-2">
-            <Pill>Azul Viagens</Pill>
-            <Pill tone="neutral">Agência em Bauru · SP</Pill>
-          </div>
-
-          <h1 className="mt-7 font-display text-[clamp(2.9rem,8vw,5.6rem)] leading-[0.95] font-light text-cream">
+          <h1 className="font-display text-[clamp(2.9rem,8vw,5.6rem)] leading-[0.95] font-light text-cream">
             De Bauru para o Nordeste,
             <span className="block text-gold">todo sábado.</span>
           </h1>
 
           <p className="mt-6 max-w-xl text-lg leading-relaxed text-muted-foreground">
-            Porto Seguro sai todos os sábados, o ano inteiro — e julho de 2027 já está aberto.
+            Porto Seguro sai todos os sábados até setembro de 2027 — e julho de 2027 já está aberto.
             Maceió, Porto de Galinhas e Recife entram em dezembro e janeiro. A gente fecha
             passagem, hotel e transfer no mesmo pacote.
           </p>
@@ -304,7 +299,7 @@ function Calendar() {
           <SectionHeading
             kicker="Calendário 2026 / 2027"
             title="Quando cada voo sai"
-            lead="Porto Seguro tem saída toda semana. Julho de 2027 e a temporada de verão têm janelas próprias — vale reservar com antecedência."
+            lead="Porto Seguro tem saída toda semana até setembro de 2027. Julho de 2027 e a temporada de verão têm janelas próprias — vale reservar com antecedência."
           />
         </Reveal>
 
@@ -325,7 +320,7 @@ function Calendar() {
                 ))}
               </ul>
               <p className="mt-5 text-xs text-muted-foreground">
-                E todos os sábados seguintes, o ano inteiro.
+                E todos os sábados seguintes, até setembro de 2027.
               </p>
             </div>
           </Reveal>

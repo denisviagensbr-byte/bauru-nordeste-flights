@@ -55,9 +55,9 @@ export type SeasonId = "sabados" | "julho2027" | "dezjan";
 
 export const SEASONS: Record<SeasonId, { label: string; short: string; note: string }> = {
   sabados: {
-    label: "Sábados, o ano todo",
+    label: "Sábados até setembro de 2027",
     short: "Sábados",
-    note: "Saídas todos os sábados, em qualquer mês do ano.",
+    note: "Saídas todos os sábados, de agora até setembro de 2027.",
   },
   julho2027: {
     label: "Julho de 2027",
@@ -101,12 +101,12 @@ export const DESTINATIONS: Destination[] = [
     image: portoSeguroImage,
     imageAlt: "Falésias e mar turquoise em Porto Seguro ao entardecer",
     kicker: "O voo fixo da Infinity",
-    schedule: "Todo sábado, o ano todo — e temporada de julho de 2027",
+    schedule: "Todo sábado até setembro de 2027 — e temporada de julho de 2027",
     seasons: ["sabados", "julho2027"],
-    badges: ["Sábados, o ano todo", "Julho 2027"],
+    badges: ["Sábados até set/2027", "Julho 2027"],
     forWhom: "Quem quer praia boa, clima de férias e um pacote que fecha rápido.",
     intro:
-      "Porto Seguro é o nosso voo de casa: toda semana tem saída de Bauru no sábado, o ano inteiro. Dali você emenda praia, vila de pescadores, passeios de barco e a noite de Arraial d'Ajuda — tudo dentro do mesmo pacote, com passagem e hospedagem juntas.",
+      "Porto Seguro é o nosso voo de casa: toda semana tem saída de Bauru no sábado, e o calendário já está aberto até setembro de 2027. Dali você emenda praia, vila de pescadores, passeios de barco e a noite de Arraial d'Ajuda — tudo dentro do mesmo pacote, com passagem e hospedagem juntas.",
     highlights: [
       "Praia de Taperapuan e Rio da Passagem",
       "Centro histórico de Porto Seguro e Passarela do Álcool",
@@ -120,7 +120,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     seoTitle: "Porto Seguro saindo de Bauru — voos todo sábado | Infinity Travel",
     seoDescription:
-      "Porto Seguro com voo saindo de Bauru todo sábado, o ano todo, e temporada de julho de 2027. Pacotes Azul Viagens com passagem, hotel e transfer. Fale com a Infinity Travel Bauru.",
+      "Porto Seguro com voo saindo de Bauru todo sábado até setembro de 2027, e temporada de julho de 2027. Pacotes Azul Viagens com passagem, hotel e transfer. Fale com a Infinity Travel Bauru.",
   },
   {
     slug: "maceio",
