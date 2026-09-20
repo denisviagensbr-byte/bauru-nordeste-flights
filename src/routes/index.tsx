@@ -502,15 +502,15 @@ function VisitUs() {
           </p>
           <ul className="mt-7 space-y-3 text-sm text-cream/90">
             <li className="flex gap-3">
-              <span className="mt-0.5 text-gold">📍</span>
+              <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-gold" />
               <span>{AGENCY.address}</span>
             </li>
             <li className="flex gap-3">
-              <span className="mt-0.5 text-gold">🕘</span>
+              <Clock className="mt-0.5 h-4 w-4 shrink-0 text-gold" />
               <span>{AGENCY.hours}</span>
             </li>
             <li className="flex gap-3">
-              <span className="mt-0.5 text-gold">💬</span>
+              <MessageCircle className="mt-0.5 h-4 w-4 shrink-0 text-gold" />
               <span>WhatsApp {AGENCY.whatsappDisplay}</span>
             </li>
           </ul>
