@@ -34,7 +34,9 @@ function getMonthCells(year: number, month: number) {
 
 function getDeparture(year: number, month: number, day: number) {
   const date = new Date(year, month, day);
-  const portoSeguro = date.getDay() === 6;
+  const firstDeparture = new Date(2026, 8, 26);
+  const lastDeparture = new Date(2027, 8, 25);
+  const portoSeguro = date.getDay() === 6 && date >= firstDeparture && date <= lastDeparture;
   const pernambuco = year === 2027 && month === 0 && day >= 3 && day <= 8;
   return { portoSeguro, pernambuco };
 }

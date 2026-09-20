@@ -6,10 +6,10 @@ import { WhatsAppButton } from "@/components/whatsapp-button";
 import { cn } from "@/lib/utils";
 
 const NAV = [
-  { label: "Calendário", href: "#calendario" },
-  { label: "Promoções", href: "#pacotes" },
-  { label: "Como funciona", href: "#como-funciona" },
-  { label: "Dúvidas", href: "#faq" },
+  { label: "Calendário", href: "/#calendario" },
+  { label: "Promoções", href: "/#pacotes" },
+  { label: "Como funciona", href: "/#como-funciona" },
+  { label: "Dúvidas", href: "/#faq" },
   { label: "Todos os pacotes", to: "/pacotes" as const },
 ];
 
