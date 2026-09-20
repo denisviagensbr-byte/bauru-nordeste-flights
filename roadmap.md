@@ -11,6 +11,7 @@
 - [x] Calendários conferidos pelo azul-escuro: Maceió em 03, 04, 05, 06 e 08/01/2027; Porto de Galinhas e Recife de 03 a 08/01/2027
 - [x] Home reorganizada: calendário mensal, promoções, como funciona, dúvidas e loja
 - [x] Cotação guiada: destino, ida, volta, adultos, crianças, idades e envio ao WhatsApp
+- [ ] Atualizar Maceió conforme os destaques exatos dos calendários enviados, incluindo fevereiro de 2027
 
 ## Pendente — depende do usuário
 - [ ] @ do Instagram real (hoje placeholder @infinitytravelbauru em `src/lib/content.ts`)
