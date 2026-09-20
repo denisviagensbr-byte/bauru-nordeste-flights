@@ -449,12 +449,9 @@ function FinalCall() {
           <div className="mt-9 flex flex-wrap justify-center gap-3">
             <WhatsAppButton
               href={whatsappLink(
-                packageMessage(FEATURED_PACKAGES[0] ?? {
-                  title: "Porto Seguro em sábado · 7 noites",
-                  destinationName: "Porto Seguro",
-                  nights: 7,
-                  seasonLabel: "Sábados, o ano todo",
-                }),
+                `Olá! Quero uma cotação de pacote para o Nordeste saindo de Bauru. Somos em ___ pessoas e gostaria de ${
+                  DESTINATIONS[0]?.name ?? "Porto Seguro"
+                }.`,
               )}
               size="lg"
             >
