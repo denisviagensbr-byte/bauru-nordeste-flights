@@ -95,12 +95,7 @@ function Hero() {
 
       <div className="mx-auto w-full max-w-6xl px-5 pt-32 pb-16">
         <div className="max-w-3xl">
-          <div className="flex flex-wrap items-center gap-2">
-            <Pill>Azul Viagens</Pill>
-            <Pill tone="neutral">Agência em Bauru · SP</Pill>
-          </div>
-
-          <h1 className="mt-7 font-display text-[clamp(2.9rem,8vw,5.6rem)] leading-[0.95] font-light text-cream">
+          <h1 className="font-display text-[clamp(2.9rem,8vw,5.6rem)] leading-[0.95] font-light text-cream">
             De Bauru para o Nordeste,
             <span className="block text-gold">todo sábado.</span>
           </h1>
