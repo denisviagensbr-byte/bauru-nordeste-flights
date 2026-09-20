@@ -369,7 +369,7 @@ function Calendar() {
                 {[
                   ["Porto de Galinhas", "saídas de 03 a 08/01/2027"],
                   ["Recife", "saídas de 03 a 08/01/2027"],
-                  ["Maceió", "quintas, de 10/12/2026 a 11/02/2027"],
+                  ["Maceió", "quintas e sábados, de 10/12/2026 a 13/02/2027"],
                 ].map(([k, v]) => (
                   <li key={k} className="flex items-baseline justify-between gap-4 border-b border-line pb-3">
                     <span className="text-cream">{k}</span>
