@@ -22,13 +22,15 @@ import recifeImage from "@/assets/destino-recife.jpg";
 
 export const AGENCY = {
   name: "Infinity Travel Bauru",
-  // >>> Troque pelo número real da agência (formato internacional, só dígitos).
-  whatsapp: "5514999999999",
-  whatsappDisplay: "(14) 99999-9999",
+  agent: "Dênis Pádua",
+  whatsapp: "5514974025530",
+  whatsappDisplay: "(14) 97402-5530",
   instagram: "@infinitytravelbauru",
   instagramUrl: "https://instagram.com/infinitytravelbauru",
   city: "Bauru · SP",
-  address: "Atendimento em Bauru — agende sua visita pelo WhatsApp.",
+  address: "R. Ver. Joaquim da Silva Martha, 17-9 · Jardim Estoril · Bauru - SP · 17011-170",
+  mapsUrl:
+    "https://www.google.com/maps/search/?api=1&query=R.+Ver.+Joaquim+da+Silva+Martha,+17-9,+Jardim+Estoril,+Bauru+-+SP,+17011-170",
   hours: "Seg. a sex. das 9h às 18h · Sáb. das 9h às 13h",
   operator: "Azul Viagens",
 };
