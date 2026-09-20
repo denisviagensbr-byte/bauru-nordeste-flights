@@ -54,7 +54,7 @@ Galeria, para quem é o destino, período e dias de voo, pacotes daquele destino
 
 ## Dados e WhatsApp
 
-- `src/lib/content.ts`: destinos, pacotes (preço, noites, hotel, refeições, transfer, bagagem, datas, selo) e textos de FAQ — arquivo comentado como "edite aqui" para trocar valores e hotéis sem mexer no visual.
+- `src/lib/content.ts`: destinos, temporadas (sábados de Porto Seguro, julho/2027 em Porto Seguro, dez/jan nos demais), pacotes (preço, noites, hotel, refeições, transfer, bagagem, datas, selo) e textos de FAQ — arquivo comentado como "edite aqui" para trocar valores e hotéis sem mexer no visual.
 - Mensagem do WhatsApp pré-preenchida por pacote, ex.: *"Olá! Tenho interesse no pacote Porto Seguro – 7 noites, saída em sábado. Pode me enviar valores e formas de pagamento?"*
 - Número da agência em uma única constante, usado por todos os botões e pelo botão flutuante.
 - Selo "valor de exemplo — sujeito a disponibilidade" em todos os preços, até você enviar os reais.
