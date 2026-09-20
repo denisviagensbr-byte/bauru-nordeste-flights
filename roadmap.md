@@ -6,8 +6,10 @@
 - [x] Responsividade mobile conferida (menu com fundo próprio, sem overflow)
 - [x] Selos "Azul Viagens" e "Agência em Bauru" removidos do topo da home
 - [x] Porto Seguro ajustado para sábados até setembro de 2027 (textos, selos e SEO)
+- [x] WhatsApp real (14) 97402-5530 aplicado em todos os botões
+- [x] Endereço real (Jardim Estoril, Bauru) + seção "Nossa loja" com foto da fachada e link do Maps
 
 ## Pendente — depende do usuário
-- [ ] Número real do WhatsApp com DDD (hoje é um placeholder em `src/lib/content.ts`)
-- [ ] @ do Instagram, endereço/bairro em Bauru e horário de atendimento reais
+- [ ] @ do Instagram real (hoje placeholder @infinitytravelbauru em `src/lib/content.ts`)
+- [ ] Confirmar horário de atendimento (hoje: seg. a sex. 9h–18h, sáb. 9h–13h)
 - [ ] Preços, hotéis e datas reais dos pacotes Azul Viagens (hoje são exemplos)
