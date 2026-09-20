@@ -116,12 +116,12 @@ function Hero() {
           </p>
 
           <div className="mt-9 flex flex-wrap items-center gap-3">
-            <WhatsAppButton
+            <a
               href="#calendario"
-              size="lg"
+              className="inline-flex items-center justify-center rounded-full bg-gold px-8 py-4 text-[0.98rem] font-semibold uppercase tracking-[0.12em] text-primary-foreground shadow-gold transition-all duration-300 hover:-translate-y-0.5 hover:bg-gold-soft hover:shadow-lift"
             >
               Ver calendário
-            </WhatsAppButton>
+            </a>
             <a
               href="#pacotes"
               className="inline-flex items-center gap-2 rounded-full border border-line-strong px-7 py-4 text-[0.8rem] font-semibold uppercase tracking-[0.14em] text-cream transition-colors hover:border-gold hover:text-gold"
