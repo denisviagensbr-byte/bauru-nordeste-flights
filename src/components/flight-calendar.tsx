@@ -37,8 +37,9 @@ function getDeparture(year: number, month: number, day: number) {
   const firstDeparture = new Date(2026, 8, 26);
   const lastDeparture = new Date(2027, 8, 25);
   const portoSeguro = date.getDay() === 6 && date >= firstDeparture && date <= lastDeparture;
+  const maceio = year === 2027 && month === 0 && day >= 3 && day <= 6;
   const pernambuco = year === 2027 && month === 0 && day >= 3 && day <= 8;
-  return { portoSeguro, pernambuco };
+  return { portoSeguro, maceio, pernambuco };
 }
 
 export function FlightCalendar() {
@@ -71,8 +72,12 @@ export function FlightCalendar() {
               <span className="h-3 w-3 shrink-0 rounded-sm border border-gold bg-cream" />
               Porto de Galinhas e Recife — 03 a 08 de janeiro de 2027
             </div>
+            <div className="flex items-center gap-3 text-cream">
+              <span className="h-3 w-3 shrink-0 rounded-sm border border-gold bg-ink" />
+              Maceió — 03 a 06 de janeiro de 2027
+            </div>
             <p className="border-t border-line pt-4 text-muted-foreground">
-              Maceió: datas ainda serão confirmadas.
+              As marcações mostram somente os dias com saída direta de Bauru.
             </p>
           </div>
 
@@ -118,9 +123,10 @@ export function FlightCalendar() {
             {cells.map((day, index) => {
               if (day === null) return <div key={`empty-${index}`} aria-hidden className="aspect-square" />;
               const departure = getDeparture(current.year, current.month, day);
-              const marked = departure.portoSeguro || departure.pernambuco;
+              const marked = departure.portoSeguro || departure.maceio || departure.pernambuco;
               const label = [
                 departure.portoSeguro ? "Porto Seguro" : "",
+                departure.maceio ? "Maceió" : "",
                 departure.pernambuco ? "Porto de Galinhas e Recife" : "",
               ].filter(Boolean).join("; ");
 
@@ -131,7 +137,9 @@ export function FlightCalendar() {
                   aria-label={marked ? `${day}: saída para ${label}` : `${day}: sem saída anunciada`}
                   className={cn(
                     "relative grid aspect-square min-w-0 place-items-center border text-sm transition-colors sm:text-base",
-                    departure.pernambuco
+                    departure.maceio && departure.pernambuco
+                      ? "border-gold bg-cream font-bold text-primary-foreground"
+                      : departure.pernambuco
                       ? "border-gold bg-cream font-bold text-primary-foreground"
                       : departure.portoSeguro
                         ? "border-gold bg-gold font-bold text-primary-foreground"
