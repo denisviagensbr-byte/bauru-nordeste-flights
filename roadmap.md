@@ -8,7 +8,7 @@
 - [x] Porto Seguro ajustado para sábados até setembro de 2027 (textos, selos e SEO)
 - [x] WhatsApp real (14) 97402-5530 aplicado em todos os botões
 - [x] Endereço real (Jardim Estoril, Bauru) + seção "Nossa loja" com foto da fachada e link do Maps
-- [x] Porto de Galinhas e Recife atualizados com saídas de Bauru de 03 a 08/01/2027
+- [x] Calendários conferidos pelo azul-escuro: Maceió em 03, 04, 05, 06 e 08/01/2027; Porto de Galinhas e Recife de 03 a 08/01/2027
 - [x] Home reorganizada: calendário mensal, promoções, como funciona, dúvidas e loja
 
 ## Pendente — depende do usuário
