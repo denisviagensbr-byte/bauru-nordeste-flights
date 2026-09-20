@@ -362,10 +362,9 @@ function Calendar() {
               <p className="mt-2 text-sm text-muted-foreground">{SEASONS.dezjan.note}</p>
               <ul className="mt-6 space-y-3 text-sm">
                 {[
-                  ["Réveillon", "saída em 26 de dezembro"],
-                  ["Recesso", "saída em 19 de dezembro"],
-                  ["Ponte de janeiro", "feriados de janeiro"],
-                  ["Volta às aulas", "últimas saídas em janeiro"],
+                  ["Porto de Galinhas", "saídas de 03 a 08/01/2027"],
+                  ["Recife", "saídas de 03 a 08/01/2027"],
+                  ["Maceió", "datas a confirmar"],
                 ].map(([k, v]) => (
                   <li key={k} className="flex items-baseline justify-between gap-4 border-b border-line pb-3">
                     <span className="text-cream">{k}</span>

@@ -365,7 +365,7 @@ export const PACKAGES: Pkg[] = [
     hotel: "Pousada Maré de Peixinhos · 4 estrelas",
     meal: "Café da manhã",
     price: 4290,
-    dates: "Saídas aos sábados entre dezembro e janeiro",
+    dates: "Saídas de Bauru de 03 a 08 de janeiro de 2027",
     includes: [
       "Voo Bauru ⇄ Recife + transfer até Porto de Galinhas",
       "6 noites com café da manhã",
@@ -383,7 +383,7 @@ export const PACKAGES: Pkg[] = [
     hotel: "Residencial Praia dos Arquitetos · 4 estrelas",
     meal: "Meia pensão",
     price: 4890,
-    dates: "Saída em 19 de dezembro · retorno em 02 de janeiro",
+    dates: "Saídas de Bauru de 03 a 08 de janeiro de 2027",
     includes: [
       "Voo Bauru ⇄ Recife + transfer até Porto de Galinhas",
       "7 noites em meia pensão",
@@ -401,7 +401,7 @@ export const PACKAGES: Pkg[] = [
     hotel: "Atlântico Boa Viagem · 4 estrelas",
     meal: "Café da manhã",
     price: 3690,
-    dates: "Saídas de dezembro a janeiro, flexível",
+    dates: "Saídas de Bauru de 03 a 08 de janeiro de 2027",
     includes: [
       "Voo Bauru ⇄ Recife",
       "5 noites com café da manhã",
@@ -419,7 +419,7 @@ export const PACKAGES: Pkg[] = [
     hotel: "Atlântico Boa Viagem · 4 estrelas",
     meal: "Meia pensão",
     price: 4390,
-    dates: "Saídas de dezembro a janeiro, flexível",
+    dates: "Saídas de Bauru de 03 a 08 de janeiro de 2027",
     includes: [
       "Voo Bauru ⇄ Recife",
       "7 noites em meia pensão",
