@@ -24,7 +24,7 @@ export const Route = createFileRoute("/pacotes")({
       {
         name: "description",
         content:
-          "Catálogo de pacotes Azul Viagens saindo de Bauru: Porto Seguro todo sábado e em julho de 2027, Maceió, Porto de Galinhas e Recife em dezembro e janeiro.",
+          "Pacotes Azul Viagens com voos diretos de Bauru: Porto Seguro aos sábados; Maceió, Porto de Galinhas e Recife em janeiro de 2027.",
       },
       {
         property: "og:title",
@@ -33,7 +33,7 @@ export const Route = createFileRoute("/pacotes")({
       {
         property: "og:description",
         content:
-          "Filtre por destino e temporada: Porto Seguro aos sábados e em julho de 2027, Maceió, Porto de Galinhas e Recife em dezembro e janeiro.",
+          "Consulte pacotes para Porto Seguro, Maceió, Porto de Galinhas e Recife com voos diretos saindo de Bauru.",
       },
       { property: "og:type", content: "website" },
       { property: "og:locale", content: "pt_BR" },

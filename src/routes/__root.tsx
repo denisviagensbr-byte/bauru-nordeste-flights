@@ -78,7 +78,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       {
         name: "description",
         content:
-          "Agência de viagens em Bauru com pacotes Azul Viagens para o Nordeste: Porto Seguro todo sábado até setembro de 2027 e em julho de 2027, Maceió, Porto de Galinhas e Recife em dezembro e janeiro.",
+          "Agência de viagens em Bauru com pacotes Azul Viagens: Porto Seguro aos sábados; Maceió, Porto de Galinhas e Recife em janeiro de 2027.",
       },
       { name: "author", content: AGENCY.name },
       { name: "robots", content: "index, follow" },

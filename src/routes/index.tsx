@@ -33,7 +33,7 @@ export const Route = createFileRoute("/")({
       {
         name: "description",
         content:
-          "Porto Seguro todo sábado até setembro de 2027, e julho de 2027 em destaque. Maceió, Porto de Galinhas e Recife em dezembro e janeiro. Pacotes Azul Viagens com passagem, hotel e transfer. Fale com a Infinity Travel Bauru.",
+          "Voos diretos de Bauru: Porto Seguro aos sábados até setembro de 2027; Maceió, Porto de Galinhas e Recife em janeiro de 2027. Pacotes Azul Viagens.",
       },
       {
         property: "og:title",
@@ -42,7 +42,7 @@ export const Route = createFileRoute("/")({
       {
         property: "og:description",
         content:
-          "Porto Seguro todo sábado até setembro de 2027 e julho de 2027. Maceió, Porto de Galinhas e Recife em dezembro e janeiro. Pacotes Azul Viagens montados pela Infinity Travel Bauru.",
+          "Porto Seguro aos sábados até setembro de 2027. Maceió, Porto de Galinhas e Recife com saídas diretas de Bauru em janeiro de 2027.",
       },
       { property: "og:type", content: "website" },
       { property: "og:locale", content: "pt_BR" },
@@ -369,7 +369,7 @@ function Calendar() {
                 {[
                   ["Porto de Galinhas", "saídas de 03 a 08/01/2027"],
                   ["Recife", "saídas de 03 a 08/01/2027"],
-                  ["Maceió", "datas a confirmar"],
+                  ["Maceió", "saídas em 03, 04, 05, 06 e 08/01/2027"],
                 ].map(([k, v]) => (
                   <li key={k} className="flex items-baseline justify-between gap-4 border-b border-line pb-3">
                     <span className="text-cream">{k}</span>

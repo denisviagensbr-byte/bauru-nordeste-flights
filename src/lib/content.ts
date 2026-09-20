@@ -67,9 +67,9 @@ export const SEASONS: Record<SeasonId, { label: string; short: string; note: str
     note: "Férias de julho com voos saindo de Bauru.",
   },
   dezjan: {
-    label: "Dezembro e janeiro",
-    short: "Dez / Jan",
-    note: "Temporada de festas e férias de verão.",
+    label: "Janeiro de 2027",
+    short: "Jan 2027",
+    note: "Saídas diretas de Bauru nas férias de janeiro.",
   },
 };
 
@@ -131,12 +131,12 @@ export const DESTINATIONS: Destination[] = [
     image: maceioImage,
     imageAlt: "Mar turquoise e falésias em Maceió no fim de tarde",
     kicker: "Temporada de festas",
-    schedule: "03 a 06 de janeiro de 2027",
+    schedule: "03, 04, 05, 06 e 08 de janeiro de 2027",
     seasons: ["dezjan"],
-    badges: ["Saídas 03 a 06/01/2027"],
+    badges: ["Saídas 03, 04, 05, 06 e 08/01"],
     forWhom: "Quem quer virar o ano na praia e voltar com a semana toda de sol.",
     intro:
-      "Maceió entra no nosso calendário com saídas diretas de Bauru nos dias 03, 04, 05 e 06 de janeiro de 2027. Montamos o pacote com a Azul Viagens e cuidamos de tudo entre a saída e o seu retorno.",
+      "Maceió entra no nosso calendário com saídas diretas de Bauru nos dias 03, 04, 05, 06 e 08 de janeiro de 2027. Montamos o pacote com a Azul Viagens e cuidamos de tudo entre a saída e o seu retorno.",
     highlights: [
       "Piscinas naturais de Pajuçara na maré baixa",
       "Dia em Maragogi e nos Carros de Bois de São Miguel dos Milagres",
@@ -150,7 +150,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     seoTitle: "Maceió saindo de Bauru — janeiro de 2027 | Infinity Travel",
     seoDescription:
-      "Maceió com voos diretos saindo de Bauru de 03 a 06 de janeiro de 2027. Pacotes Azul Viagens com passagem, hotel e transfer. Atendimento da Infinity Travel Bauru.",
+      "Maceió com voos diretos saindo de Bauru em 03, 04, 05, 06 e 08 de janeiro de 2027. Pacotes Azul Viagens com passagem, hotel e transfer. Atendimento da Infinity Travel Bauru.",
   },
   {
     slug: "portos-de-galinhas",
@@ -159,12 +159,12 @@ export const DESTINATIONS: Destination[] = [
     image: portoDeGalinhasImage,
     imageAlt: "Piscinas naturais de Porto de Galinhas em águas turquoise",
     kicker: "Temporada de festas",
-    schedule: "Dezembro e janeiro",
+    schedule: "03 a 08 de janeiro de 2027",
     seasons: ["dezjan"],
-    badges: ["Temporada dez/jan"],
+    badges: ["Saídas 03 a 08/01/2027"],
     forWhom: "Família com criança: água morninha, calma e peixinho por todo lado.",
     intro:
-      "Porto de Galinhas é o destino que agrada a família inteira: piscinas naturais de água morna, jangada, passeio de buggy e uma vila com ótimos restaurantes. Nas saídas de dezembro e janeiro o voo sai de Bauru e o pacote já vai com hospedagem e transfer.",
+      "Porto de Galinhas é o destino que agrada a família inteira: piscinas naturais de água morna, jangada, passeio de buggy e uma vila com ótimos restaurantes. De 03 a 08 de janeiro de 2027 o voo sai direto de Bauru para Recife, e o pacote já vai com hospedagem e transfer.",
     highlights: [
       "Piscinas naturais de Maracaípe e Camboinhas",
       "Passeio de buggy pelas praias do litoral sul",
@@ -176,9 +176,9 @@ export const DESTINATIONS: Destination[] = [
       "Sapatilha de água é essencial nos corais.",
       "Crianças aproveitam mais as praias de águas calmas do lado norte.",
     ],
-    seoTitle: "Porto de Galinhas saindo de Bauru — dezembro e janeiro | Infinity Travel",
+    seoTitle: "Porto de Galinhas saindo de Bauru — janeiro de 2027 | Infinity Travel",
     seoDescription:
-      "Porto de Galinhas com voo saindo de Bauru em dezembro e janeiro. Pacotes Azul Viagens com passagem, pousada e transfer. Fale com a Infinity Travel Bauru.",
+      "Porto de Galinhas com voo direto saindo de Bauru de 03 a 08 de janeiro de 2027. Pacotes Azul Viagens com passagem, pousada e transfer.",
   },
   {
     slug: "recife",
@@ -187,12 +187,12 @@ export const DESTINATIONS: Destination[] = [
     image: recifeImage,
     imageAlt: "Orla de Recife ao anoitecer com barcos e skyline",
     kicker: "Temporada de festas",
-    schedule: "Dezembro e janeiro",
+    schedule: "03 a 08 de janeiro de 2027",
     seasons: ["dezjan"],
-    badges: ["Temporada dez/jan"],
+    badges: ["Saídas 03 a 08/01/2027"],
     forWhom: "Quem quer cidade e praia no mesmo dia, com boa mesa e cultura.",
     intro:
-      "Recife combina praia urbana, bairro histórico e a melhor mesa do Nordeste — e ainda fica perto de Olinda e Porto de Galinhas. Nas saídas de dezembro e janeiro, o voo sai de Bauru e o pacote fecha passagem, hotel e transfer de uma vez.",
+      "Recife combina praia urbana, bairro histórico e a melhor mesa do Nordeste — e ainda fica perto de Olinda e Porto de Galinhas. De 03 a 08 de janeiro de 2027, o voo sai direto de Bauru e o pacote fecha passagem, hotel e transfer de uma vez.",
     highlights: [
       "Praia de Boa Viagem e o calçadão ao entardecer",
       "Recife Antigo, Pátio de São Pedro e Marco Zero",
@@ -204,9 +204,9 @@ export const DESTINATIONS: Destination[] = [
       "Reserve uma noite para a comida: buffet de frutos do mar é programa.",
       "Em boa parte das praias, entre no mar só em área com recife protegendo.",
     ],
-    seoTitle: "Recife saindo de Bauru — dezembro e janeiro | Infinity Travel",
+    seoTitle: "Recife saindo de Bauru — janeiro de 2027 | Infinity Travel",
     seoDescription:
-      "Recife com voo saindo de Bauru em dezembro e janeiro. Pacotes Azul Viagens com passagem, hotel e transfer. Atendimento da Infinity Travel Bauru.",
+      "Recife com voo direto saindo de Bauru de 03 a 08 de janeiro de 2027. Pacotes Azul Viagens com passagem, hotel e transfer. Atendimento da Infinity Travel Bauru.",
   },
 ];
 
@@ -329,7 +329,7 @@ export const PACKAGES: Pkg[] = [
     hotel: "Praia Resort Sete Coqueiros · 4 estrelas",
     meal: "All inclusive",
     price: 5490,
-    dates: "Saídas diretas de Bauru de 03 a 06 de janeiro de 2027",
+    dates: "Saídas diretas em 03, 04, 05, 06 e 08 de janeiro de 2027",
     includes: [
       "Voo Bauru ⇄ Maceió",
       "7 noites com all inclusive",
@@ -347,7 +347,7 @@ export const PACKAGES: Pkg[] = [
     hotel: "Hotel Orla da Jatiúca · 4 estrelas",
     meal: "Café da manhã",
     price: 3890,
-    dates: "Saídas diretas de Bauru de 03 a 06 de janeiro de 2027",
+    dates: "Saídas diretas em 03, 04, 05, 06 e 08 de janeiro de 2027",
     includes: [
       "Voo Bauru ⇄ Maceió",
       "5 noites com café da manhã",

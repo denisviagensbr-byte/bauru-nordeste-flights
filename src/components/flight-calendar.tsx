@@ -37,7 +37,7 @@ function getDeparture(year: number, month: number, day: number) {
   const firstDeparture = new Date(2026, 8, 26);
   const lastDeparture = new Date(2027, 8, 25);
   const portoSeguro = date.getDay() === 6 && date >= firstDeparture && date <= lastDeparture;
-  const maceio = year === 2027 && month === 0 && day >= 3 && day <= 6;
+  const maceio = year === 2027 && month === 0 && [3, 4, 5, 6, 8].includes(day);
   const pernambuco = year === 2027 && month === 0 && day >= 3 && day <= 8;
   return { portoSeguro, maceio, pernambuco };
 }
@@ -74,7 +74,7 @@ export function FlightCalendar() {
             </div>
             <div className="flex items-center gap-3 text-cream">
               <span className="h-3 w-3 shrink-0 rounded-sm border border-gold bg-ink" />
-              Maceió — 03 a 06 de janeiro de 2027
+              Maceió — 03, 04, 05, 06 e 08 de janeiro de 2027
             </div>
             <p className="border-t border-line pt-4 text-muted-foreground">
               As marcações mostram somente os dias com saída direta de Bauru.
@@ -147,6 +147,9 @@ export function FlightCalendar() {
                   )}
                 >
                   {day}
+                  {departure.maceio && (
+                    <span className="absolute left-1 bottom-1 h-1.5 w-1.5 rounded-full bg-ink" />
+                  )}
                   {departure.portoSeguro && departure.pernambuco && (
                     <span className="absolute right-1 bottom-1 h-1.5 w-1.5 rounded-full bg-ink" />
                   )}
