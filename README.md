@@ -1,14 +1,18 @@
-# Welcome to your Lovable project
+# Bauru Nordeste Escapes
+
+Quero construir uma landing page para vender as principais saídas de Bauru - SP para o Nordeste, no caso voos ao sábados para Porto Seguro todo sábado o ano todo  e para Maceió, seria Dezembro e janeiro, Porto de galinhas, saindo dezembro e janeiro e Recife Dezembro e janeiro, quero deixar exemplos de pacotes para os clientes, os pacotes são da Azul Viagens
 
 This project was built with [Lovable](https://lovable.dev).
 
+**Live app**: https://bauru-nordeste-flights.lovable.app
+
 ## Build with Lovable
 
-Open your project in the [Lovable editor](https://lovable.dev) and keep building.
+Continue developing this project in the [Lovable editor](https://lovable.dev/projects/cc8d2b0b-d78a-48ad-9b7f-d34e379ccdad).
 
 - **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: connect the project to GitHub and every change made in Lovable is committed straight to your repository.
-- **Full ownership**: this code is yours. Push to your repository and your changes sync back into Lovable, ready for your next prompt.
+- **Stay in sync**: every change made in Lovable is committed straight to this repository.
+- **Full ownership**: this code is yours. Push to `main` on GitHub and your changes sync back into Lovable, ready for your next prompt.
 
 ## Development
 
@@ -20,10 +24,3 @@ cd <repository-name>
 npm i
 npm run dev
 ```
-
-## Built with
-
-- TanStack Start
-- TypeScript
-- React
-- Tailwind CSS
