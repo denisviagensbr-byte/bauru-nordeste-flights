@@ -78,7 +78,10 @@ function isDeparture(destination: DestinationId, year: number, month: number, da
 
 function isReturn(destination: DestinationId, value: string, departure: string | null) {
   if (!departure || value <= departure) return false;
-  if (destination === "porto-seguro") return parseDate(value).getDay() === 6;
+  if (destination === "porto-seguro") {
+    const date = parseDate(value);
+    return date.getDay() === 6 && date <= new Date(2027, 8, 25);
+  }
   return (destination === "maceio" ? MACEIO_RETURNS : PERNAMBUCO_RETURNS).includes(value);
 }
 
