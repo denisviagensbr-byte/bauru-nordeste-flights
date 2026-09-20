@@ -13,7 +13,7 @@ Página de vendas para os voos de Bauru (SP) para o Nordeste, com pacotes Azul V
 
 | Destino | Frequência | Destaque |
 | --- | --- | --- |
-| Porto Seguro | Todo sábado, o ano todo | Produto fixo: "sábado é dia de Porto Seguro" |
+| Porto Seguro | Todo sábado, o ano todo — e temporada de julho de 2027 | Produto fixo: "sábado é dia de Porto Seguro", com julho/2027 em destaque |
 | Maceió | Dezembro e janeiro | Temporada de festas / férias |
 | Porto de Galinhas | Dezembro e janeiro | Temporada |
 | Recife | Dezembro e janeiro | Temporada |
@@ -32,17 +32,17 @@ Todos os voos partem de Bauru. Nada de preço oficial da Azul: a página vende o
 ### Home — seções
 
 1. **Abertura** — "De Bauru para o Nordeste, todo sábado." Foto grande, selo "Azul Viagens" e botão "Falar no WhatsApp".
-2. **Nossos voos** — 4 cartões: Porto Seguro com selo "sábados, o ano todo"; Maceió, Porto de Galinhas e Recife com selo "temporada dez/jan".
-3. **Pacotes em destaque** — 3 a 4 pacotes de exemplo: destino, noites, hotel, o que inclui, "a partir de R$ X" e "parcelamos no cartão".
+2. **Nossos voos** — 4 cartões: Porto Seguro com os selos "sábados, o ano todo" e "julho 2027"; Maceió, Porto de Galinhas e Recife com selo "temporada dez/jan".
+3. **Pacotes em destaque** — 3 a 4 pacotes de exemplo: destino, noites, hotel, o que inclui, "a partir de R$ X" e "parcelamos no cartão". Um deles é Porto Seguro em julho de 2027.
 4. **Como funciona** — 3 passos: escolhe no WhatsApp → montamos o pacote com a Azul → você viaja.
 5. **Por que fechar com a Infinity** — emissão e hospedagem no mesmo pacote, acompanhamento da agência, atendimento em Bauru.
-6. **Calendário 2026/2027** — sábados disponíveis de Porto Seguro e as janelas de dez/jan dos demais.
+6. **Calendário 2026/2027** — sábados disponíveis de Porto Seguro, a janela de julho de 2027 (Porto Seguro) e as janelas de dez/jan dos demais.
 7. **Dúvidas frequentes** — bagagem, transfer, menores, formas de pagamento, o que o pacote inclui.
 8. **Chamada final + rodapé** — WhatsApp, Instagram, cidade, horário de atendimento.
 
 ### Página de cada destino
 
-Galeria, para quem é o destino, período e dias de voo, pacotes daquele destino, e um bloco "o que levar / dicas curtas". Cada uma com título e descrição próprios para Google e WhatsApp.
+Galeria, para quem é o destino, período e dias de voo, pacotes daquele destino, e um bloco "o que levar / dicas curtas". Na página de Porto Seguro, julho de 2027 tem bloco próprio (datas, pacotes e chamada). Cada uma com título e descrição próprios para Google e WhatsApp.
 
 ## Sistema visual
 
@@ -54,7 +54,7 @@ Galeria, para quem é o destino, período e dias de voo, pacotes daquele destino
 
 ## Dados e WhatsApp
 
-- `src/lib/content.ts`: destinos, pacotes (preço, noites, hotel, refeições, transfer, bagagem, datas, selo) e textos de FAQ — arquivo comentado como "edite aqui" para trocar valores e hotéis sem mexer no visual.
+- `src/lib/content.ts`: destinos, temporadas (sábados de Porto Seguro, julho/2027 em Porto Seguro, dez/jan nos demais), pacotes (preço, noites, hotel, refeições, transfer, bagagem, datas, selo) e textos de FAQ — arquivo comentado como "edite aqui" para trocar valores e hotéis sem mexer no visual.
 - Mensagem do WhatsApp pré-preenchida por pacote, ex.: *"Olá! Tenho interesse no pacote Porto Seguro – 7 noites, saída em sábado. Pode me enviar valores e formas de pagamento?"*
 - Número da agência em uma única constante, usado por todos os botões e pelo botão flutuante.
 - Selo "valor de exemplo — sujeito a disponibilidade" em todos os preços, até você enviar os reais.
