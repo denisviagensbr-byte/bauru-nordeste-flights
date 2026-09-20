@@ -6,11 +6,11 @@ import { WhatsAppButton } from "@/components/whatsapp-button";
 import { cn } from "@/lib/utils";
 
 const NAV = [
-  { label: "Voos", href: "#voos" },
-  { label: "Pacotes", to: "/pacotes" as const },
-  { label: "Calendário", href: "#calendario" },
-  { label: "Como funciona", href: "#como-funciona" },
-  { label: "Dúvidas", href: "#faq" },
+  { label: "Calendário", href: "/#calendario" },
+  { label: "Promoções", href: "/#pacotes" },
+  { label: "Como funciona", href: "/#como-funciona" },
+  { label: "Dúvidas", href: "/#faq" },
+  { label: "Todos os pacotes", to: "/pacotes" as const },
 ];
 
 function Wordmark() {

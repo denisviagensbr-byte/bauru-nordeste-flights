@@ -9,6 +9,7 @@
 - [x] WhatsApp real (14) 97402-5530 aplicado em todos os botões
 - [x] Endereço real (Jardim Estoril, Bauru) + seção "Nossa loja" com foto da fachada e link do Maps
 - [x] Porto de Galinhas e Recife atualizados com saídas de Bauru de 03 a 08/01/2027
+- [x] Home reorganizada: calendário mensal, promoções, como funciona, dúvidas e loja
 
 ## Pendente — depende do usuário
 - [ ] @ do Instagram real (hoje placeholder @infinitytravelbauru em `src/lib/content.ts`)
