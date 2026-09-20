@@ -112,8 +112,10 @@ export function SiteHeader() {
 
       <div
         className={cn(
-          "overflow-hidden transition-[max-height,opacity] duration-500 lg:hidden",
-          open ? "max-h-96 opacity-100" : "max-h-0 opacity-0",
+          "overflow-hidden backdrop-blur-xl transition-[max-height,opacity] duration-500 lg:hidden",
+          open
+            ? "max-h-[34rem] border-b border-line bg-ink/98 opacity-100"
+            : "max-h-0 opacity-0",
         )}
       >
         <nav className="mx-auto flex max-w-6xl flex-col gap-1 px-5 pt-4 pb-6">
